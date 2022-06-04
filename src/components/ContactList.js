@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 const ContactList = () => {
     const { contact, keyword } = useSelector((state) => state);
     let [filteredList, setFilteredList] = useState([]);
-
+    console.log(keyword);
     useEffect(() => {
         if (keyword !== '') {
             let list = contact.filter((item) => item.name.includes(keyword));

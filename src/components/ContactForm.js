@@ -11,7 +11,7 @@ const ContactForm = () => {
     const addContact = (e) => {
         e.preventDefault();
         //preventDefault이녀석은 뭘까?? 처음본다...
-
+        console.log('클릭');
         //디프패치 타입은 항상 대문자 기억하자!!!
         dispatch({ type: 'ADD_CONTACT', payload: { name, phoneNumber } });
         //{ name: name, phoneNumber: phoneNumber }를 {name, phoneNumber}로 줄일수있다.
